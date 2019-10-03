@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage{stmaryrd}
+\usepackage[letterpaper, total={6in, 10in}]{geometry}
+\date{}
+\author{}
+\title{SI 4: Function Composition}
+\begin{document}
+	
+	\maketitle
+	\section{Domain and Co-Domain}
+	\begin{enumerate}
+		\item Provide a function who's domain and co-domain can only be $\mathbb{N}$
+		\item Consider a function $f$ that returns its input with decimal point truncated, such that $f(0.1) = 0$, $f(\pi) = 3$, $f(2) =2$. What would the function's ``signature" $f: A \to B$ be? (i.e. what would its domain an co-domain be)?
+	\end{enumerate}
+	\section{Function Composition}
+	
+	\begin{enumerate}[resume]
+		\item Define the function in problem (2.) as a composition of other functions using the following functions as building blocks:
+		\begin{enumerate}
+			\item $plus(n,m) = n+m$
+			\item $minus(n,m) = n-m$
+			\item $times(n,m) = n \times m$
+			\item $div(n,m) = n \div m$
+			\item $mod(n,m) = n \% m$ (aka the remainder of dividing n by m).
+		\end{enumerate}
+		Hint: you may define new functions where some of these functions are partially applied. Consider, for example, that you need a function that increments its argument by 5. Then you could define: $plus_5(n) = plus(n,5)$.
+		\item Imagine a matrix of size $N\times M$, where the variable $i\in [0,N-1]$ indexes the rows and $j \in [0,M-1]$ the columns. A common trick in computer science is to ``flatten" such a matrix by using a bijection between the set of indices of the matrix (enumerated by $(i,j)$) and the set of numbers $[0,(N\times M)-1]$. Find this bijection and its inverse. \textit{Hint: Notice that you are given that the matrix is of size $N\times M$.}
+		\end{enumerate}
+
+	
+\end{document}
