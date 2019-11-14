@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage{stmaryrd}
+\usepackage[letterpaper, total={6in, 10in}]{geometry}
+\date{}
+\author{}
+\title{SI 6: Modular Arithmetic}
+\begin{document}
+	\maketitle
+	\section{Calendar Arithmetic}
+	You may use the following facts:
+	
+	\begin{enumerate}
+		\item Leap years contain an extra day, February 29th. Leap years happen every 4 years, but not every 100 years, but again every 400 years. The last leap year was 2016
+		\item September, April, June and November all have 30 days. All other months but February have 31 days. February has 28 days on regular years and 29 days on leap years.		
+	\end{enumerate}
+	Calculate the day of the week for the following dates:
+	\begin{enumerate}
+		\item 02/24/2056
+		\item 9/15/2102
+	\end{enumerate}
+\section{Proofs with modular arithmetic}
+Let $mult: \mathbb{N}\times\mathbb{N} \to \mathscr{P}(\mathbb{N})$ be a function defined as follows:
+\begin{align*}
+	mult(x,y) = \{(x\cdot n)\%y | n \in \mathbb{N}\}
+\end{align*}
+and let $\mathbb{N}_{2019} = \{0,1,2,3,...,2018\} \subset \mathbb{N}$. Prove  that $mult(2,2019) = \mathbb{N}_{2019}$.
+\end{document}
