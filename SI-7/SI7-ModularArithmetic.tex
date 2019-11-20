@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage{stmaryrd}
+\usepackage[letterpaper, total={6in, 10in}]{geometry}
+\date{}
+\author{}
+\title{SI 7: Modular Arithmetic}
+\begin{document}
+	\maketitle
+	\begin{enumerate}
+		\item Prove or disprove the following statement:
+		$\forall n \in \mathbb{N},\:\:\: n^2-79n+1601$ is prime.
+		\item Recall Euclid's algorithm for the gcd:
+		\begin{align*}
+			\text{gcd}(0,n) &= n\\
+			\text{gcd}(m,n) &= \text{gcd}(n\%m,m)
+		\end{align*}
+		Prove the correctness of Euclid's algorithm (prove that it is guaranteed to find the correct result).
+		\item Prove that $\forall n,m\in\mathbb{N}$:
+		\begin{align*}
+		n\cdot m &=\text{gcd}(n,m) \cdot \text{lcm}(m,n)
+		\end{align*}
+	\end{enumerate}
+\end{document}
