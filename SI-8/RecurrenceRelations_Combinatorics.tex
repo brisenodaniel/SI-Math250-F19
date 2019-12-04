@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage{stmaryrd}
+\usepackage[letterpaper, total={6in, 10in}]{geometry}
+\date{}
+\author{}
+\title{SI 8: Recurrences and Combinatorics}
+\begin{document}
+	\maketitle
+\section{Recurrences}
+\begin{enumerate}
+	\item Find the closed form of the following recurrence:
+	\begin{align*}
+	x_n &= 6x_{n-1} - 9x_{n-2}\\
+	x_0 &= 2\\
+	x_1 &= 3
+	\end{align*}
+	\item Find the family of polynomials functions with a function equivalent to:
+	\begin{align*}
+	f(n) = \frac{n}{2}\%4
+	\end{align*}
+	You do not need to solve for the constants $a_0,a_1,...,a_n$
+\end{enumerate}
+\section{Counting Cards}
+\begin{enumerate}[resume]
+	\item In how many ways can you get a flush in a 5-card poker hand (all five cards of the same suit)?
+	\item A straight flush (all 5 cards of the same suit, and they form a straight)?
+	\item A royal flush (ten, joker, queen, king, ace, of the same suit)?
+	\item A full house (a two of a kind and a three of a kind)?
+\end{enumerate}
+\end{document}
